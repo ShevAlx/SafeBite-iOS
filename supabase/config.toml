@@ -1,0 +1,6 @@
+project_id = "safebite"
+
+[functions.vision-proxy]
+# Requires a valid Supabase anon/service key on every call (default) —
+# the app already sends one, so no extra auth work is needed client-side.
+verify_jwt = true

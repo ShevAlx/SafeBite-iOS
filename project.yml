@@ -1,0 +1,27 @@
+name: ProductScanner
+options:
+  bundleIdPrefix: com.vibecoding
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  ProductScanner:
+    type: application
+    platform: iOS
+    sources:
+      - path: ProductScanner
+    info:
+      path: ProductScanner/Info.plist
+      properties:
+        CFBundleDisplayName: SafeBite
+        CFBundleShortVersionString: "1.31"
+        CFBundleVersion: "5"
+        UILaunchScreen: {}
+        NSCameraUsageDescription: "Camera access is needed to scan barcodes and products"
+        NSPhotoLibraryUsageDescription: "Photo library access is needed to upload a product photo"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.vibecoding.ProductScanner
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_STYLE: Automatic

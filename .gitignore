@@ -1,0 +1,27 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+.DS_Store
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods (if used later)
+Pods/
+
+# Secrets
+*.env
+*.p12
+*.mobileprovision
+ProductScanner/Services/Secrets.swift
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
